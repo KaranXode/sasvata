@@ -2,6 +2,7 @@ import React from 'react'
 import ProductCard from '../Components/ProductCard/Page'
 import apple from '../Assets/Images/apple.jpg'
 import veg from '../Assets/Images/veg1.png'
+import Heading from '../Components/Heading/Page';
 
 export default function UpcomingProduct() {
   const fruitImages = [
@@ -12,20 +13,20 @@ export default function UpcomingProduct() {
     { title: "Dehydrated Dehydrated Pineapple", url: apple }
   ];
   return (
-    <div>
-       <div className="px-6 py-10 bg-[#EAEAEA]">
-        <h2 className="text-[40px] font-bold text-center">Up Coming Products</h2>
-         <div className="flex items-center justify-center gap-4 flex-wrap">
-         {
-          fruitImages.map((item) => (
-            <ProductCard key={item.title} title={item.title} imageUrl={item.url} />
-          ))
-        }
+    <>
+      <div className="px-6 py-10 bg-[#EAEAEA]">
+        <Heading title="Up Coming Products" className="text-center mb-6"/>
+        <div className="flex items-center justify-center gap-4 flex-wrap">
+          {
+            fruitImages.map((item) => (
+              <ProductCard key={item.title} title={item.title} imageUrl={item.url} />
+            ))
+          }
 
 
-    </div>
-    </div>
-   
-    </div>
+        </div>
+      </div>
+
+    </>
   )
 }

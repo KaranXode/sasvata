@@ -3,10 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* 
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -14,16 +11,24 @@
     --foreground: #ededed;
   }
 } */
-*{
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --white:#ffffff;
+  --primary-color: #00B207;
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
- 
+
 }
 
 @layer utilities {
@@ -32,87 +37,240 @@ body {
   }
 }
 
-.home-wrapper{
+.home-wrapper {
   background-color: #D9D9D9;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
-.content-center{
+
+.content-center {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.social-container{
+
+.social-container {
   width: 200px;
   height: 200px;
   overflow: hidden;
-  border-radius:8px;
+  border-radius: 8px;
 }
-.social-container a{
+
+.social-container a {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.primary-btn{
-  background-color: #00B207;
-  color: white;
-  padding: 13px 61px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border: none;
+
+
+.counting-wrapper {
+  border: 1px solid #ccc;
+  width: 312px;
+  height: 174px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.counting-section {
+  background: linear-gradient(rgba(0, 16, 9, 0.8), rgba(0, 16, 9, 0.8)), url('./Assets/Images/countingbg.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  min-height: 40vh;
+height: auto;
+  padding: 24px;
+
+  margin: 48px 0;
+
+
+}
+
+.line{
+  width: 99px;
+  height: 18px;
+  background: #fff;
+  margin-bottom: 8px;
+}
+@media (max-width: 1499px) {
+  .line{
+  width: 60px;
+  height: 6px;
+  }
+}
+.menuIcon{
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  z-index: 2;
   cursor: pointer;
-  border-radius: 11px;
 }
-.btn-lg{
-  font-size: 42px;
-  padding: 16px 120px;
-}
-.logo-icon{
+
+.logo-icon {
   width: 300px;
   height: 300px;
   position: absolute;
   background: #fff;
-  left: 46%;
+  left: 42%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-/* From Uiverse.io by andrew-demchenk0 */ 
-.rating:not(:checked) > input {
+
+
+@media (max-width: 568px) {
+  .logo-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-icon {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .logo-icon {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1499px) {
+  .logo-icon {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* From Uiverse.io by andrew-demchenk0 */
+.rating:not(:checked)>input {
   position: absolute;
   appearance: none;
 }
 
-.rating:not(:checked) > label {
+.rating:not(:checked)>label {
   float: right;
   cursor: pointer;
   font-size: 22px;
   color: #666;
 }
 
-.rating:not(:checked) > label:before {
+.rating:not(:checked)>label:before {
   content: '★';
 }
 
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
   color: #e58e09;
 }
 
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
   color: #ff9e0b;
 }
 
-.rating > input:checked ~ label {
+.rating>input:checked~label {
   color: #ffa723;
 }
 
+@media (max-width:768px) {
+  .sectionOne{
+    flex-direction: column;
+  
+  }
+}
+.navbar-link{
+  font-size: 26px;
+  color: var(--white);
 
 
+}
+.active{
+  color: red; /* Highlight active link */
+  font-weight: bold;
+}
+/* Button.css */
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn-icon {
+  margin-right: 8px; /* Spacing between icon and label */
+  display: flex;
+  align-items: center;
+}
+
+/* Small Button */
+.btn-small {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+/* Medium Button (default) */
+.btn-medium {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+/* Large Button */
+.btn-large {
+  font-size: 16px;
+  padding: 13px 41px;
+}
+
+/* Extra Large Button */
+.btn-extra-large {
+  font-size: 43px;
+  padding: 16px 114px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #00B207; /* Primary  color */
+}
+
+.btn-primary:hover {
+  background-color: #008A05; /* Darker  on hover */
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--white); /* Secondary grey color */
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color); /* Darker grey on hover */
+  color: var(--white);
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05); 
+}

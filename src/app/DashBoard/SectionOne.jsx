@@ -4,11 +4,11 @@ import truckImg from '../Assets/Images/truck.jpg'
 
 export default function SectionOne() {
     return (
-        <div className="flex justify-center p-6 h-full w-full ">
+        <div className="flex justify-center p-6 h-full w-full sectionOne ">
             <div className="">
             <Image src={truckImg} alt="img" className="" />
             </div>
-            <div className="flex-[60%] pl-8">
+            <div className="flex-[60%] md:pl-8 mt-6 md:mt-0">
                 <h3 className="text-[33px] font-semibold">What We Do:</h3>
                 <p className="text-[18px] my-6"><strong>SELECTION & CLEANING :</strong> The initial phase involves choosing fresh, high-quality fruits and vegetables. These items
                     are then meticulously washed to eliminate any dirt, pesticides, or other impurities.</p>
