@@ -23,10 +23,10 @@ export default function FullBanner() {
         <div>
           <Image src={bgimg2} alt="img" className="w-full" />
         </div>
-        <div className="absolute inset-[40%_50%_0_10%] text-white">
-          <h1 className="text-6xl font-semibold">Sasvata</h1>
-          <p className="text-3xl">DEHYDRATED FOODS</p>
-          <Button size="extra-large" variant="primary" label="Taste It" className="mt-16" />
+        <div className="absolute inset-[25%_5%] md:inset-[40%_50%_0_10%] text-white">
+          <h1 className="text-[24px] md:text-4xl lg:text-6xl font-semibold">Sasvata</h1>
+          <p className="text-[16px] md:text-xl lg:text-3xl">DEHYDRATED FOODS</p>
+          <Button size="extra-large" variant="primary" label="Taste It" className="mt-4 lg:mt-16" />
           <div>
     </div>
         </div>

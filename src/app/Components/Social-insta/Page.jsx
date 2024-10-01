@@ -8,7 +8,7 @@ import instaIcon from '../../Assets/Icons/instagramIcon.svg'
 export default function SocialMedia() {
   return (
     <div className="bg-[#EAEAEA] py-24">
-      <h2 className="text-[32px] lg:text-2xl text-center font-semibold my-7">Follow us on Instagram</h2>
+      <h2 className="text-[18px] md:text-[32px] lg:text-2xl text-center font-semibold my-7">Follow us on Instagram</h2>
 
       <ul className="flex justify-center items-center gap-2">
 

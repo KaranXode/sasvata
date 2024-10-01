@@ -11,8 +11,12 @@ export default function aboutPage() {
     <div className="bg-[#D9D9D9]">
       <BannerNav/>
      
-      <TwoCard smImgurl={p2} lgImgurl={p1} className="flex-row-reverse"/>
-      <TwoCard smImgurl={p2} lgImgurl={p1}  className=""/>
+     <div className="flex ">
+     <TwoCard smImgurl={p2} lgImgurl={p1} className="flex-row-reverse"/>
+     </div>
+      <div>
+      <TwoCard smImgurl={p2} lgImgurl={p1}/>
+      </div>
 
     </div>
   )

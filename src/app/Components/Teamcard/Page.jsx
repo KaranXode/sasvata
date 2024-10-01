@@ -13,7 +13,7 @@ export default function Teamcard() {
             <div className="m-4">
                 <Heading title="Our Awesome Team" className="text-center" />
             </div>
-            <div className=" mt-16 flex justify-center items-center gap-4">
+            <div className=" mt-16 flex justify-center flex-wrap items-center gap-4">
                 <div className="h-[368px] w-[312px] rounded-xl">
                     <div className="h-[280px] w-[312px]  bg-white overflow-hidden">
                         <Image src={p1} className="object-cover w-full h-full"

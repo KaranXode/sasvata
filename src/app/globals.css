@@ -57,6 +57,21 @@ body {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .social-container {
+    width: 90px;
+    height: 90px;
+  }
+  
+}
+@media (max-width: 568px) {
+  .social-container {
+   width: 60px;
+   height: 60px;
+ }
+
+}
+
 .social-container a {
   display: block;
   height: 100%;
@@ -105,6 +120,21 @@ height: auto;
   .line{
   width: 60px;
   height: 6px;
+
+  }
+}
+@media (max-width: 1024px) {
+  .line{
+  width: 40px;
+  height: 6px;
+  margin-bottom: 6px;
+  }
+}
+@media (max-width: 1024px) {
+  .line{
+  width: 24px;
+  height: 4px;
+  margin-bottom: 4px;
   }
 }
 .menuIcon{
@@ -114,7 +144,16 @@ height: auto;
   z-index: 2;
   cursor: pointer;
 }
-
+@media (max-width: 768px) {
+  .menuIcon{
+    right: 30px;
+  }
+}
+@media (max-width: 768px) {
+.twoCard-col{
+  flex-direction: column;
+}
+}
 .logo-icon {
   width: 300px;
   height: 300px;
@@ -126,12 +165,21 @@ height: auto;
 }
 
 
-@media (max-width: 568px) {
+
+
+@media (max-width: 1499px) {
   .logo-icon {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
   }
 }
+@media (max-width: 1199px) {
+  .logo-icon {
+    width: 160px;
+    height: 160px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .logo-icon {
@@ -140,19 +188,13 @@ height: auto;
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 568px) {
   .logo-icon {
-    width: 160px;
-    height: 160px;
+    width: 60px;
+    height: 60px;
   }
 }
 
-@media (max-width: 1499px) {
-  .logo-icon {
-    width: 200px;
-    height: 200px;
-  }
-}
 
 /* From Uiverse.io by andrew-demchenk0 */
 .rating:not(:checked)>input {
@@ -197,12 +239,11 @@ height: auto;
 .navbar-link{
   font-size: 26px;
   color: var(--white);
-
-
 }
-.active{
-  color: red; /* Highlight active link */
-  font-weight: bold;
+@media (max-width:768px) {
+  .navbar-link{
+    font-size: 14px;
+  }
 }
 /* Button.css */
 
@@ -247,6 +288,13 @@ height: auto;
 .btn-extra-large {
   font-size: 43px;
   padding: 16px 114px;
+}
+@media (max-width:768px) {
+  .btn-extra-large {
+    font-size: 12px;
+    padding: 10px 64px;
+    width: 180px;
+  }
 }
 
 /* Primary Button */
