@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -12,12 +13,17 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+ 
 }
 
 @layer utilities {
@@ -25,3 +31,88 @@ body {
     text-wrap: balance;
   }
 }
+
+.home-wrapper{
+  background-color: #D9D9D9;
+  height: 100vh;
+  width: 100%;
+}
+.content-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.social-container{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius:8px;
+}
+.social-container a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.primary-btn{
+  background-color: #00B207;
+  color: white;
+  padding: 13px 61px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 11px;
+}
+.btn-lg{
+  font-size: 42px;
+  padding: 16px 120px;
+}
+.logo-icon{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: #fff;
+  left: 46%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+
+
