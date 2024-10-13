@@ -17,7 +17,7 @@ export default function SocialMedia() {
           <Link href="https://www.instagram.com/" target="_blank">
             <Image src={tamato} alt="Image" className="group-hover:blur-[8px] transition-opacity duration-300" />
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Image src={instaIcon} alt="Instagram Icon" className="w-10 h-10" />
+              <Image src={instaIcon} alt="Instagram Icon" className=" w-6 h-6 sm:w-10 sm:h-10 " />
             </div>
           </Link>
         </li>
@@ -27,7 +27,7 @@ export default function SocialMedia() {
           <Link href="https://www.instagram.com/" target="_blank">
             <Image src={green} alt="Image" className="group-hover:blur-[8px] transition-opacity duration-300" />
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Image src={instaIcon} alt="Instagram Icon" className="w-10 h-10" />
+              <Image src={instaIcon} alt="Instagram Icon" className="w-6 h-6 sm:w-10 sm:h-10" />
             </div>
           </Link>
         </li>
@@ -37,7 +37,7 @@ export default function SocialMedia() {
           <Link href="https://www.instagram.com/" target="_blank">
             <Image src={tamato} alt="Image" className="group-hover:blur-[8px] transition-opacity duration-300" />
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Image src={instaIcon} alt="Instagram Icon" className="w-10 h-10" />
+              <Image src={instaIcon} alt="Instagram Icon" className="w-6 h-6 sm:w-10 sm:h-10" />
             </div>
           </Link>
         </li>
@@ -47,7 +47,7 @@ export default function SocialMedia() {
           <Link href="https://www.instagram.com/" target="_blank">
             <Image src={green} alt="Image" className="group-hover:blur-[8px] transition-opacity duration-300" />
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Image src={instaIcon} alt="Instagram Icon" className="w-10 h-10" />
+              <Image src={instaIcon} alt="Instagram Icon" className="w-6 h-6 sm:w-10 sm:h-10" />
             </div>
           </Link>
         </li>
@@ -57,7 +57,7 @@ export default function SocialMedia() {
           <Link href="https://www.instagram.com/" target="_blank">
             <Image src={tamato} alt="Image" className="group-hover:blur-[8px] transition-opacity duration-300" />
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Image src={instaIcon} alt="Instagram Icon" className="w-10 h-10" />
+              <Image src={instaIcon} alt="Instagram Icon" className="w-6 h-6 sm:w-10 sm:h-10" />
             </div>
           </Link>
         </li>

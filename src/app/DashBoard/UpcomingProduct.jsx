@@ -4,7 +4,7 @@ import apple from '../Assets/Images/apple.jpg'
 import veg from '../Assets/Images/veg1.png'
 import Heading from '../Components/Heading/Page';
 
-export default function UpcomingProduct() {
+export default function UpcomingProduct(props) {
   const fruitImages = [
     { title: "Dehydrated Dehydrated Apple ", url: apple },
     { title: "Dehydrated Dehydrated Banana", url: veg },
@@ -19,7 +19,7 @@ export default function UpcomingProduct() {
         <div className="flex items-center justify-center gap-4 flex-wrap">
           {
             fruitImages.map((item) => (
-              <ProductCard key={item.title} title={item.title} imageUrl={item.url} />
+              <ProductCard key={item.title} title={item.title} imageUrl={item.url} showStar={props.shareOnWhatsApp}  />
             ))
           }
 
