@@ -238,7 +238,7 @@ height: auto;
 }
 .navbar-link{
   font-size: 26px;
-  color: var(--white);
+  /* color: var(--white); */
 }
 @media (max-width:768px) {
   .navbar-link{

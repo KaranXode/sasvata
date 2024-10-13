@@ -1,9 +1,9 @@
 "use client";
 import React from 'react';
 
-export default function WhatsAppShareButton({ title, imageUrl }) {
+export default function WhatsAppShareButton({ title, imageSrc }) {
     const handleWhatsAppShare = () => {
-        const message = `Check out this product: ${title}\n\nImage: ${imageUrl}`;
+        const message = `Image: ${imageSrc} \n\n Check out this product: ${title}`;
         const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
