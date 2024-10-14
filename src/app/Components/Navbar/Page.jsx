@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import logo from '../.././Assets/Icons/sasvata-logo.svg'
 import Image from 'next/image'
-import Hamburger from '../MenuBar/Page'
+import HamburgerMenu from '../MenuBar/Page'
 
 export default function Navbar(props) {
   return (
@@ -13,13 +13,13 @@ export default function Navbar(props) {
        </Link>
         </div>
         <nav className={`flex gap-2 lg:gap-6 xl:gap-[10rem] items-center ${props.navStyle} `}>
-          <ul className="flex gap-6">
+          <ul className=" gap-6 hidden md:flex">
             <Link href="/pages/about" className="navbar-link">About Us</Link>
             <Link href="/pages/product" className="navbar-link">Our Products</Link>
             <Link href="/pages/contact" className="navbar-link">Contact Us</Link>
             <Link href="/pages/faq" className="navbar-link">F&Q</Link>
           </ul>
-          <Hamburger/>
+          <HamburgerMenu hamburgerIconStyle={props.hamburgerIconStyle}/>
         </nav>
        
     

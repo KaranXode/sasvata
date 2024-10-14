@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* 
 
@@ -13,22 +13,19 @@
 } */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --white:#ffffff;
-  --primary-color: #00B207;
+  --white: #ffffff;
+  --primary-color: #00b207;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 @layer utilities {
@@ -38,7 +35,7 @@ body {
 }
 
 .home-wrapper {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   /* height: 100vh; */
   width: 100%;
 }
@@ -62,14 +59,12 @@ body {
     width: 90px;
     height: 90px;
   }
-  
 }
 @media (max-width: 568px) {
   .social-container {
-   width: 60px;
-   height: 60px;
- }
-
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .social-container a {
@@ -78,23 +73,31 @@ body {
   width: 100%;
 }
 
-
-
 .counting-wrapper {
   border: 1px solid #ccc;
-  width: 312px;
+  max-width: 312px;
+  width: 100%;
   height: 174px;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
+}
+@media (max-width: 768px) {
+  .counting-wrapper {
+    height: 100px;
+  }
 }
 
 .counting-section {
-  background: linear-gradient(rgba(0, 16, 9, 0.8), rgba(0, 16, 9, 0.8)), url('./Assets/Images/countingbg.jpg');
+  background: linear-gradient(rgba(0, 16, 9, 0.8), rgba(0, 16, 9, 0.8)),
+    url("./Assets/Images/countingbg.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -102,42 +105,39 @@ body {
   gap: 24px;
   justify-content: center;
   min-height: 40vh;
-height: auto;
+  height: auto;
   padding: 24px;
 
   margin: 48px 0;
-
-
 }
 
-.line{
+.line {
   width: 99px;
   height: 18px;
   background: #fff;
   margin-bottom: 8px;
 }
 @media (max-width: 1499px) {
-  .line{
-  width: 60px;
-  height: 6px;
-
+  .line {
+    width: 60px;
+    height: 6px;
   }
 }
 @media (max-width: 1024px) {
-  .line{
-  width: 40px;
-  height: 6px;
-  margin-bottom: 6px;
+  .line {
+    width: 40px;
+    height: 6px;
+    margin-bottom: 6px;
   }
 }
 @media (max-width: 1024px) {
-  .line{
-  width: 24px;
-  height: 4px;
-  margin-bottom: 4px;
+  .line {
+    width: 24px;
+    height: 4px;
+    margin-bottom: 4px;
   }
 }
-.menuIcon{
+.menuIcon {
   position: absolute;
   right: 50px;
   top: 30px;
@@ -145,14 +145,14 @@ height: auto;
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .menuIcon{
+  .menuIcon {
     right: 30px;
   }
 }
 @media (max-width: 768px) {
-.twoCard-col{
-  flex-direction: column;
-}
+  .twoCard-col {
+    flex-direction: column;
+  }
 }
 .logo-icon {
   width: 300px;
@@ -163,9 +163,6 @@ height: auto;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-
-
-
 
 @media (max-width: 1499px) {
   .logo-icon {
@@ -179,7 +176,6 @@ height: auto;
     height: 160px;
   }
 }
-
 
 @media (max-width: 768px) {
   .logo-icon {
@@ -195,53 +191,59 @@ height: auto;
   }
 }
 
-
 /* From Uiverse.io by andrew-demchenk0 */
-.rating:not(:checked)>input {
+.rating:not(:checked) > input {
   position: absolute;
   appearance: none;
 }
 
-.rating:not(:checked)>label {
+.rating:not(:checked) > label {
   float: right;
   cursor: pointer;
   font-size: 22px;
   color: #666;
 }
 
-.rating:not(:checked)>label:before {
-  content: '★';
+.rating:not(:checked) > label:before {
+  content: "★";
 }
 
-.rating>input:checked+label:hover,
-.rating>input:checked+label:hover~label,
-.rating>input:checked~label:hover,
-.rating>input:checked~label:hover~label,
-.rating>label:hover~input:checked~label {
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
   color: #e58e09;
 }
 
-.rating:not(:checked)>label:hover,
-.rating:not(:checked)>label:hover~label {
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
   color: #ff9e0b;
 }
 
-.rating>input:checked~label {
+.rating > input:checked ~ label {
   color: #ffa723;
 }
 
-@media (max-width:768px) {
-  .sectionOne{
+@media (max-width: 768px) {
+  .sectionOne {
     flex-direction: column;
-  
   }
+
 }
-.navbar-link{
+
+.navbar-link {
   font-size: 26px;
   /* color: var(--white); */
 }
-@media (max-width:768px) {
-  .navbar-link{
+
+@media (max-width: 991px) {
+  .navbar-link {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-link {
     font-size: 14px;
   }
 }
@@ -255,7 +257,7 @@ height: auto;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
   color: var(--white);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -289,21 +291,25 @@ height: auto;
   font-size: 43px;
   padding: 16px 114px;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .btn-extra-large {
     font-size: 12px;
     padding: 10px 64px;
     width: 180px;
   }
+  .btn-large {
+    font-size: 12px;
+    padding: 10px 32px;
+  }
 }
 
 /* Primary Button */
 .btn-primary {
-  background-color: #00B207; /* Primary  color */
+  background-color: #00b207; /* Primary  color */
 }
 
 .btn-primary:hover {
-  background-color: #008A05; /* Darker  on hover */
+  background-color: #008a05; /* Darker  on hover */
 }
 
 /* Secondary Button */
@@ -320,5 +326,206 @@ height: auto;
 
 /* Hover effect */
 .btn:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* General Styles */
+.hamburger-menu {
+  position: relative;
+  z-index: 100;
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 101;
+}
+@media (max-width: 768px) {
+  .hamburger-icon {
+    width: 24px;
+    height: 20px;
+  }
+}
+
+/* Bar styles */
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.top-bar {
+  transform-origin: top left;
+}
+
+.middle-bar {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.bottom-bar {
+  transform-origin: bottom left;
+}
+
+/* Open state for the hamburger icon */
+.bar.open.top-bar {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+.bar.open.middle-bar {
+  opacity: 0;
+}
+
+.bar.open.bottom-bar {
+  transform: rotate(-45deg);
+  background-color: white;
+}
+
+/* Change bar color when open */
+.hamburger-icon .bar.open {
+  background-color: #000;
+}
+
+/* Side menu styles */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -270px; /* Hide off screen */
+  width: 270px;
+  height: 100%;
+  padding: 24px;
+  background: #fff;
+  color: white;
+  transition: right 0.3s ease;
+  z-index: 100;
+}
+
+.side-menu ul {
+  margin-top: 70px;
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  /* margin: 20px 0 */
+}
+
+.side-menu a {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+}
+
+/* Show the side menu when open */
+.side-menu.show {
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Hover effects for links in the menu */
+.side-menu li a:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  opacity: 0.8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
 }

@@ -5,8 +5,8 @@ import bgimg from '../.././Assets/Images/homepage-bg.jpg'
 import bgimg2 from '../.././Assets/Images/homebg.jpg'
 
 import logo from '../.././Assets/Icons/sasvata-logo.svg'
-import Hamburger from '../MenuBar/Page'
 import Button from '../Button/Page'
+import HamburgerMenu from '../MenuBar/Page'
 
 
 
@@ -15,7 +15,7 @@ export default function FullBanner() {
     <>
       <div className="home-wrapper relative" >
         <div className="menuIcon">
-          <Hamburger/>
+          <HamburgerMenu/>
         </div>
         <div className="logo-icon">
           <Image src={logo} alt="logo" className="relative top-[-20px]" />
@@ -26,7 +26,7 @@ export default function FullBanner() {
         <div className="absolute inset-[25%_5%] md:inset-[40%_50%_0_10%] text-white">
           <h1 className="text-[24px] md:text-4xl lg:text-6xl font-semibold">Sasvata</h1>
           <p className="text-[16px] md:text-xl lg:text-3xl">DEHYDRATED FOODS</p>
-          <Button size="extra-large" variant="primary" label="Taste It" className="mt-4 lg:mt-16" />
+          <Button size="extra-large" variant="primary" label="Taste It" className="mt-4 lg:mt-16 sm:text-xl md:text-3xl" />
           <div>
     </div>
         </div>
