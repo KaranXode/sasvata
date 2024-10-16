@@ -4,7 +4,7 @@ import logo from '../.././Assets/Icons/sasvata-logo.svg'
 import Image from 'next/image'
 import HamburgerMenu from '../MenuBar/Page'
 
-export default function Navbar(props) {
+export default function Navbar({navStyle,...props}) {
   return (
     <div className="flex justify-between items-center p-3 lg:p-6">
         <div>
@@ -12,7 +12,7 @@ export default function Navbar(props) {
        <Image src={logo} alt="logo" className="max-w-[60px] md:max-w-[156px] md:h-[80px] object-contain" />
        </Link>
         </div>
-        <nav className={`flex gap-2 lg:gap-6 xl:gap-[10rem] items-center ${props.navStyle} `}>
+        <nav className={`flex gap-2 lg:gap-6 xl:gap-[10rem] items-center ${navStyle} `}>
           <ul className=" gap-6 hidden md:flex">
             <Link href="/pages/about" className="navbar-link">About Us</Link>
             <Link href="/pages/product" className="navbar-link">Our Products</Link>

@@ -9,7 +9,7 @@ export default function ClientCard(props) {
         <>
 
 
-            <div className=" w-[300px] h-[254px] md:w-full max-w-[424px] rounded-xl bg-white p-4 shadow-[0px_10px_20px_0px_#00000003]">
+            <div className=" w-[312px] h-[254px] md:w-full max-w-[424px] rounded-xl bg-white p-4 shadow-[0px_10px_20px_0px_#00000003]">
                 <div className="py-4">
                     <Image src={commaIcon} className="" alt="img" />
                 </div>
@@ -26,8 +26,8 @@ export default function ClientCard(props) {
                                 </div>
                                 <div>
                                     <div className="bg-white p-2 md:p-3">
-                                        <h4 className="text-[14px] md:text-[16px] font-bold">Jenny Wilson</h4>
-                                        <p className="text-sm text-[#808080]">Ceo & Founder</p>
+                                        <h4 className="text-[12px] md:text-[16px] font-bold">Jenny Wilson</h4>
+                                        <p className="text-[11px] md:text-sm text-[#808080]">Ceo & Founder</p>
                                     </div>
                                 </div>
                             </div>

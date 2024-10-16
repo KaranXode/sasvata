@@ -57,22 +57,22 @@ export default function ProductInfo({ params }) {
           </p>
           <WhatsAppShareButton imageSrc={""} title={""} />
           <div className="flex gap-2 flex-row ">
-            <div className="max-w-[280px] w-full p-3 rounded-lg flex justify-center items-center flex-col text-center border border-[#8D8A8A]">
-              <p className="text-xl md:text-2xl whitespace-nowrap">100% Quality Tested: </p>
-              <p className="text-[14px] md:text-[16px] text-[#8D8A8A]">
+            <div className="max-w-[280px] w-full p-3 rounded-lg flex justify-center items-center flex-col text-center border border-[#8D8A8A] hover:border-green-500">
+              <p className="text-[12px] md:text-2xl whitespace-nowrap">100% Quality Tested: </p>
+              <p className="text-[8px] md:text-[16px] text-[#8D8A8A]">
                 {" "}
                 we test each batch with FSSAI standards
               </p>
             </div>
-            <div className="max-w-[280px] w-full p-3 rounded-lg flex justify-center items-center flex-col text-center border border-[#8D8A8A]">
-              <p className=" text-xl md:text-2xl whitespace-nowrap">100% Natural </p>
-              <p className="text-[14px] md:text-[16px] text-[#8D8A8A]">
+            <div className="max-w-[280px] w-full p-3 rounded-lg flex justify-center items-center flex-col text-center border border-[#8D8A8A] hover:border-green-500">
+              <p className=" text-[12px] md:text-2xl whitespace-nowrap">100% Natural </p>
+              <p className="text-[8px] md:text-[16px] text-[#8D8A8A]">
                 No Colors No Preservatives added
               </p>
             </div>
-            <div className="max-w-[280px] w-full p-3 rounded-lg flex justify-center items-center flex-col border text-center border-[#8D8A8A]">
-              <p className=" text-xl md:text-2xl whitespace-nowrap">24/7</p>
-              <p className="text-[14px] md:text-[16px] text-[#8D8A8A]"> Customer Support</p>
+            <div className="max-w-[280px] w-full p-3 rounded-lg flex justify-center items-center flex-col border text-center border-[#8D8A8A] hover:border-green-500">
+              <p className=" text-[12px] md:text-2xl whitespace-nowrap">24/7</p>
+              <p className="text-[8px] md:text-[16px] text-[#8D8A8A]"> Customer Support</p>
             </div>
           </div>
         </div>

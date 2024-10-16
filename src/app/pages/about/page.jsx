@@ -4,6 +4,7 @@ import TwoCard from '@/app/Layout/AboutPage/TwoCard'
 import React from 'react'
 import p1 from'../../Assets/Images/truck.jpg'
 import p2 from'../../Assets/Images/people2.jpg'
+import Teamcard from '@/app/Components/Teamcard/Page'
 
 
 export default function aboutPage() {
@@ -17,6 +18,7 @@ export default function aboutPage() {
       <div>
       <TwoCard smImgurl={p2} lgImgurl={p1}/>
       </div>
+      <Teamcard/>
 
     </div>
   )

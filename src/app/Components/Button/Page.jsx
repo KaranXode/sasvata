@@ -8,7 +8,7 @@ export default function Button({ size, variant, label, icon,onClick,className })
     const variantClass = variant === 'secondary' ? 'btn-secondary' : 'btn-primary';
 
     return (
-        <button className={`btn ${sizeClass} ${variantClass} ${className}`} onClick={onClick}>
+        <button className={`btn ${sizeClass} ${variantClass} ${className} `} onClick={onClick}>
           <span>  {label}</span>
             {icon && <span className="btn-icon">{icon}</span>}
             

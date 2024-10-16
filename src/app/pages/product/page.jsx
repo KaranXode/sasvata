@@ -10,7 +10,7 @@ export default function product() {
     <div className="bg-[#D9D9D9]">
      <BannerNav/>
      <TextVideo/>
-    <UpcomingProduct shareOnWhatsApp={true}/>
+    <UpcomingProduct shareOnWhatsApp={true} title={"Our Product"} slider={false}/>
 
      <SocialMedia/>
     </div>

@@ -22,7 +22,7 @@ export default function Layout() {
       <SectionOne />
       <TextVideo />
 
-      <UpcomingProduct />
+      <UpcomingProduct title="Up Coming Product" />
       <Teamcard />
 
       <SocialMedia />
