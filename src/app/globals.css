@@ -160,20 +160,26 @@ body {
   position: absolute;
   background: #fff;
   left: 42%;
+  z-index: 2;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-
-@media (max-width: 1499px) {
+@media (max-width: 1699px) {
   .logo-icon {
     width: 200px;
     height: 200px;
   }
 }
+@media (max-width: 1499px) {
+  .logo-icon {
+    width: 180px;
+    height: 180px;
+  }
+}
 @media (max-width: 1199px) {
   .logo-icon {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
   }
 }
 
