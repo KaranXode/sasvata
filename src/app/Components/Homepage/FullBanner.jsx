@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import bgimg from '../.././Assets/Images/homepage-bg.jpg'

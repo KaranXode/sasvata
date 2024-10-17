@@ -44,14 +44,14 @@ export default function About() {
             customer service.
           </p>
           <div className="text-center lg:text-left lg:absolute bottom-0">
-            <Link href="/pages/about">
+            <a href="/pages/about">
               <Button
                 size="large"
                 variant="primary"
                 label="Check More"
                 icon={<FaArrowRightLong />}
               />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

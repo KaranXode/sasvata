@@ -9,7 +9,7 @@ export default function Navbar({navStyle,...props}) {
     <div className="flex justify-between items-center p-3 lg:p-6">
         <div>
        <Link href="/">
-       <Image src={logo} alt="logo" className="max-w-[60px] md:max-w-[156px] md:h-[80px] object-contain" />
+       <Image src={logo} alt="logo" className="max-w-[40px] sm:max-w-[68px] bg-white rounded-[50%]" />
        </Link>
         </div>
         <nav className={`flex gap-2 lg:gap-6 xl:gap-[10rem] items-center ${navStyle} `}>

@@ -13,7 +13,7 @@ export default function ProductCard(props) {
         </div>
         <div className="bg-white p-3 relative">
           <div className="md:h-[64px] p-2">
-            <h4 className="text-[16px] md:text-2xl font-bold mb-3 md:mb-5">{props.title}</h4>
+            <h4 className="text-[16px] md:text-2xl whitespace-nowrap overflow-hidden text-ellipsis font-bold mb-3 md:mb-5">{props.title}</h4>
           </div>
           <div className="absolute bottom-[-30px] w-[90%] p-2">
             <div className="flex justify-between items-center">

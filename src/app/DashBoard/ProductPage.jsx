@@ -58,14 +58,14 @@ export default function ProductPage() {
       </Carousel>
       </div>
       <div className="text-center my-8">
-        <Link href="/pages/product">
+        <a href="/pages/product">
           <Button
             size="large"
             variant="primary"
             label="Check More"
             icon={<FaArrowRightLong />}
           />
-        </Link>
+        </a>
       </div>
     </div>
   );
