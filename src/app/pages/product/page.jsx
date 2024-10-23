@@ -1,3 +1,4 @@
+import Footer from '@/app/Components/Footer/Page'
 import BannerNav from '@/app/Components/Homepage/BannerNav'
 import Navbar from '@/app/Components/Navbar/Page'
 import SocialMedia from '@/app/Components/Social-insta/Page'
@@ -13,6 +14,7 @@ export default function product() {
     <UpcomingProduct shareOnWhatsApp={true} title={"Our Product"} slider={false}/>
 
      <SocialMedia/>
+     <Footer/>
     </div>
   )
 }

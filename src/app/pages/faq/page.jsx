@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/app/Components/Footer/Page";
 import Navbar from "@/app/Components/Navbar/Page";
 
 import { useState } from "react";
@@ -71,6 +72,7 @@ const FaqPage = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </>
   );

@@ -11,6 +11,7 @@ import UpcomingProduct from '../DashBoard/UpcomingProduct'
 import Testimonials from '../DashBoard/Testimonials'
 import CountingPage from '../DashBoard/CountingPage'
 import FullBanner from '../Components/Homepage/FullBanner'
+import Footer from '../Components/Footer/Page'
 
 export default function Layout() {
   return (
@@ -28,6 +29,7 @@ export default function Layout() {
       <SocialMedia />
       <Testimonials />
       <CountingPage />
+      <Footer/>
     </div>
   )
 }
